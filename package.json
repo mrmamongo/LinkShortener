@@ -1,0 +1,27 @@
+{
+  "name": "mern-app",
+  "version": "1.0.0",
+  "description": "little mern project",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "server": "nodemon app.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Nikita Gogol <mrmamongo@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^6.3.0",
+    "config": "^3.3.6",
+    "express": "^4.17.1",
+    "express-validator": "^6.13.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.11",
+    "nodemon": "^2.0.13",
+    "scss": "^0.2.4",
+    "shortid": "^2.2.16"
+  }
+}
